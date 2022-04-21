@@ -125,17 +125,52 @@ body {
   color: #edecff;
 }
 
-.light-ball {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: -100px;
-  top: 97px;
-  background: #edecff;
-  filter: blur(50px);
+.section-separation {
+  margin-top:5px;
+  align-self:center;
+  width: 327px;
+  border: 1px solid #646369;
+  margin: 25px;
 }
 
-.test-button {
+.about-me-flex {
+  display: flex;
+  width: 375px;
+  flex-wrap: wrap;
+  margin-top:-20px;
+}
+
+.about-me-flex > div {
+  display: flex;  
+  flex-direction: column;
+  margin: 37px;
+  margin-left: 45px;
+  margin-bottom: 0;
+}
+
+.about-me-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #9490ff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-list-item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #f5f5ff;
+  margin-top: 19px;
+}
+
+.project-button {
   margin-top: 15px;
   margin-left: 15px;
   width: 68px;
@@ -151,15 +186,36 @@ body {
   letter-spacing: 0.03em;
 }
 
-.test-button:hover {
+.project-button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.test-button:active {
+.project-button:active {
   background: #5e42d7;
 }
 
-.test-button:disabled {
+.project-button:disabled {
   background: #2a2b33;
   box-shadow: none;
+}
+
+.light-effect {
+  position: absolute;
+  background: #edecff;
+  filter: blur(60px);
+}
+
+.big-light-ball {
+  width: 160px;
+  height: 160px;
+  left: -100px;
+  top: 97px;
+}
+
+.small-light-ball {
+  width: 68px;
+  height: 68px;
+  left: 339px;
+  top: 565px;
+  filter: blur(26px);
 }
