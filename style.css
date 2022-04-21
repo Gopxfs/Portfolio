@@ -1,11 +1,11 @@
-.page-flex{
+.page-flex {
     display:flex;
     flex-direction: column;
     width:375px;
     background-color: #191765;
 }
 
-.header-flex{
+.header-flex {
     display:flex;
     flex-direction: row;
     background-color:#191765;
@@ -13,15 +13,16 @@
     align-items: center;
 }
 
-.header-logo-placeholder{
+.header-logo-placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 12px;
 }
 
-.header-logo{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.header-logo {
+    padding-left:12px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -30,7 +31,7 @@
     color:#ffffff
 }
 
-.header-button{
+.header-button {
     padding:8px;
     width:66px;
     height:66px;
@@ -42,11 +43,11 @@
     background:none;
 }
 
-.header-button:hover{
+.header-button:hover {
     box-shadow: 0px 8px 16px;
 }
 
-.header-menu-placeholder{
+.header-menu-placeholder {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -56,40 +57,79 @@
     height:50px;
 }
 
-.header-menu-icon{
+.header-menu-icon {
     width:33.33px;
     height:1.5px;
     border-radius:15%;
     background-color: #ffffff;
 }
 
-.headline-flex{
+.headline-flex {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headline-heading-placeholder{
+.headline-heading-placeholder {
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5E42D7;
     width:327px;
     height:154px;
     margin:40px;
 }
 
-.light-ball{
+.headline-description-placeholder {
+    width:327px;
+    height:170px;
+    margin:none;
+    margin-bottom:33px;
+}
+
+.headline-description {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color:#C8C8D4;
+}
+
+.headline-heading-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0.37px;
+    color:#7D73FC;
+    margin-top:0px;
+    order:0;
+}
+
+.headline-heading-occupation {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:32px;
+    line-height:44px;
+    order:1;
+    margin-top:0px;
+    color:#EDECFF;
+}
+
+.light-ball {
     position:absolute;
     width:160px;
     height:160px;
-    left:-106px;
+    left:-100px;
     top:97px;
     background:#EDECFF;
     filter:blur(50px);
 }
 
-.test-button{
+.test-button {
     margin-top:15px;
     margin-left:15px;
     width:68px;
@@ -97,7 +137,7 @@
     background-color: #7D73FC;
     border:none;
     color:#ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size:12px;
@@ -105,15 +145,15 @@
     letter-spacing: 0.03em;
 }
 
-.test-button:hover{
+.test-button:hover {
     box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.test-button:active{
+.test-button:active {
     background: #5E42D7;
 }
 
-.test-button:disabled{
+.test-button:disabled {
     background: #2A2B33;
     box-shadow: none;
 }
