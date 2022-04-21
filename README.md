@@ -6,7 +6,7 @@
 - CSS
 
 ## Screenshot
-![Portfolio screenshot](/images/screenshot.xcf "Portfolio Screenshot")
+![Portfolio screenshot](/images/screenshot.png "Portfolio Screenshot")
 
 ## Getting Started:
 To access my portfolio:
