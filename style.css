@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .page-flex {
   display: flex;
   flex-direction: column;
@@ -29,6 +34,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #fff;
+  text-decoration: none;
 }
 
 .header-button {
@@ -83,6 +89,7 @@
   height: 170px;
   margin: none;
   margin-bottom: 33px;
+  margin-top: -20px;
 }
 
 .headline-description {
@@ -99,7 +106,7 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 72px;
   letter-spacing: 0.37px;
   color: #7d73fc;
@@ -114,7 +121,7 @@
   font-size: 32px;
   line-height: 44px;
   order: 1;
-  margin-top: 0;
+  margin-top: -20px;
   color: #edecff;
 }
 
