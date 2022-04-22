@@ -6,10 +6,14 @@
 - CSS
 
 ## Screenshot
-![Header screenshot](/images/screenshot1.png "Header Screenshot")
-![About me screenshot](/images/screenshot2.png "About me Screenshot")
-![Contact screenshot](/images/screenshot3.png "Contact Screenshot")
-![Work card screenshot](/images/screenshot4.png "Work card Screenshot")
+![Header screenshot](/images/screenshot1.png "Header Screenshot")<br>
+Header<br>
+![About me screenshot](/images/screenshot2.png "About me Screenshot")<br>
+About me<br>
+![Contact screenshot](/images/screenshot3.png "Contact Screenshot")<br>
+Contact session<br>
+![Work card screenshot](/images/screenshot4.png "Work card Screenshot")<br>
+Work cards<br>
 
 ## Getting Started:
 To access my portfolio:
