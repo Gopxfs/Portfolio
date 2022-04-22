@@ -184,6 +184,8 @@ body {
   width: 100px;
   height: 30px;
   gap: 5px;
+  margin-top: 20px;
+  margin-bottom:5px;
 }
 .contact-icons * {
   width: 18px;
@@ -252,6 +254,7 @@ body {
 
 .work-grid {
   display: grid;
+  grid-template-rows: repeat(1fr);
 }
 
 .work-card {
@@ -262,22 +265,60 @@ body {
 .work-card-image-placeholder {
   width: 327px;
   height: 236px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   margin:24px;
 }
 
 .work-card-project-title {
-
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-left: 24px;
 }
 
 .work-card-project-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  margin: 24px;
+}
 
+.work-card-project-languages {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:50px;
+}
+
+.project-language {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.languages-separation {
+  width: 1px;
+  height: 40px;
+  background-color: #555555;
 }
 
 .project-button {
   margin-top: 15px;
   margin-left: 24px;
-  width: 68px;
+  margin-bottom: 16px;
+  width: 89px;
   height: 48px;
   background-color: #7d73fc;
   border: none;
@@ -322,4 +363,8 @@ body {
   left: 339px;
   top: 565px;
   filter: blur(26px);
+}
+
+.ellipse1 {
+
 }
