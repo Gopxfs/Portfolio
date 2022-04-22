@@ -126,22 +126,22 @@ body {
 }
 
 .section-separation {
-  margin-top:5px;
-  align-self:center;
+  margin: 25px;
+  margin-top: 5px;
+  align-self: center;
   width: 327px;
   border: 1px solid #646369;
-  margin: 25px;
 }
 
 .about-me-flex {
   display: flex;
   width: 375px;
   flex-wrap: wrap;
-  margin-top:-20px;
+  margin-top: -20px;
 }
 
 .about-me-flex > div {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   margin: 37px;
   margin-top: 30px;
@@ -156,6 +156,11 @@ body {
   font-size: 12px;
   line-height: 24px;
   color: #9490ff;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -169,11 +174,11 @@ body {
   line-height: 24px;
   color: #f5f5ff;
   margin-top: 19px;
+  list-style-type: none;
 }
 
 .contact-github {
-  display:flex;
-
+  display: flex;
 }
 
 .contact-icons {
@@ -185,15 +190,17 @@ body {
   height: 30px;
   gap: 5px;
   margin-top: 20px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
+
 .contact-icons * {
   width: 18px;
   height: 20px;
 }
 
 .arrow-down-work {
-  display:flex;
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .arrow {
@@ -201,11 +208,11 @@ body {
   height: 24px;
   background-color: #a2a3ae;
   position: relative;
-  top:27px;
+  top: 27px;
   left: 158px;
 }
 
-.arrow:after{
+.arrow::after {
   content: "";
   display: inline-block;
   width: 15px;
@@ -217,7 +224,7 @@ body {
   top: -14px;
 }
 
-.arrow:before{
+.arrow::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -225,7 +232,7 @@ body {
   background-color: #a2a3ae;
   transform: rotate(45deg);
   position: relative;
-  left:-12.5px;
+  left: -12.5px;
   top: 4.5px;
 }
 
@@ -236,7 +243,7 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #a2a3ae;
-  position:relative;
+  position: relative;
   left: 179px;
 }
 
@@ -266,7 +273,7 @@ body {
   width: 327px;
   height: 236px;
   background-color: #f9f9f9;
-  margin:24px;
+  margin: 24px;
 }
 
 .work-card-project-title {
@@ -296,7 +303,7 @@ body {
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  margin-right:50px;
+  margin-right: 50px;
 }
 
 .project-language {
@@ -311,7 +318,7 @@ body {
 .languages-separation {
   width: 1px;
   height: 40px;
-  background-color: #555555;
+  background-color: #555;
 }
 
 .project-button {
@@ -366,5 +373,33 @@ body {
 }
 
 .ellipse1 {
+  top: 1424px;
+  width: 25px;
+  height: 482px;
+  left: -50px;
+  transform: rotate(-36.38deg);
+}
 
+.ellipse2 {
+  width: 70px;
+  height: 261px;
+  top: 2380px;
+  left: 405px;
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+}
+
+.ellipse3 {
+  width: 308px;
+  height: 100px;
+  left: -120px;
+  top: 3240px;
+  filter: blur(100px);
+}
+
+.ellipse4 {
+  width: 70px;
+  height: 377px;
+  left: 258px;
+  top: 3900px;
+  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
