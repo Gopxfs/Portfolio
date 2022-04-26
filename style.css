@@ -405,6 +405,11 @@ body {
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
 
+#contact-form {
+  display:flex;
+  flex-direction: column;
+}
+
 #contact-me {
   display: flex;
   flex-direction: column;
