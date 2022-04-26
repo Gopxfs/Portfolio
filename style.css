@@ -406,6 +406,8 @@ body {
 }
 
 #contact-me {
+  display: flex;
+  flex-direction: column;
   margin-top: 80px;
   padding: 0 24px;
   width: auto;
