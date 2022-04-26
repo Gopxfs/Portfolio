@@ -406,7 +406,7 @@ body {
 }
 
 #contact-me {
-  margin-top: 120px;
+  margin-top: 80px;
   padding: 0 24px;
   width: auto;
   align-self: center;
@@ -449,7 +449,7 @@ form input {
   width: 89%;
   margin-bottom: 24px;
   padding: 15px 16px;
-  height: 48px;
+  height: 25px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -458,16 +458,18 @@ form input {
   color: #191765;
 }
 
-.contact-me-name {
-  background: #f7f3ff;
+#contact-me-name {
+  background: #fff;
+  height: 13px;
 }
 
-.contact-me-email {
+#contact-me-email {
   background: #fff;
+  height: 13px;
 }
 
 form textarea {
-  width: 91.2%;
+  width: 92%;
   margin-bottom: 52px;
   padding: 12px;
   background: #fff;
@@ -496,6 +498,28 @@ form button {
   height: auto;
 }
 
+#submit-button {
+  margin-top: -15px;
+  margin-right: 15px;
+}
+
 form {
   margin-bottom: 71px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+.footer-email {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: 0;
 }
