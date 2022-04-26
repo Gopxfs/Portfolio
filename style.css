@@ -130,7 +130,7 @@ body {
   margin-top: 5px;
   align-self: center;
   width: 327px;
-  border: 1px solid #646369;
+  border: 0.8px solid #646369;
 }
 
 .about-me-languages-list {
@@ -174,21 +174,9 @@ body {
   list-style-type: none;
 }
 
-.contact-github {
-  display: flex;
-}
-
 .contact-icons {
   display: flex;
-  flex-direction: row;
-  align-self: center;
-  align-items: center;
-  justify-content: space-between;
-  width: 100px;
-  height: 30px;
-  gap: 5px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  justify-content: center;
 }
 
 .contact-icons * {
@@ -196,16 +184,15 @@ body {
   height: 20px;
 }
 
-.contact-icons-list {
+.contact-icons ul {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 22px;
   list-style: none;
   margin: 0;
   padding: 0;
-  align-self: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100px;
   height: 30px;
   margin-top: 20px;
@@ -310,7 +297,7 @@ body {
   margin: 24px;
 }
 
-.work-card-project-languages {
+.work-card ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
