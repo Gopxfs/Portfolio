@@ -441,10 +441,6 @@ body {
   margin-bottom: 40px;
 }
 
-#contact-me form {
-  width: auto;
-}
-
 form input {
   width: 89%;
   margin-bottom: 24px;
@@ -501,10 +497,15 @@ form button {
 #submit-button {
   margin-top: -15px;
   margin-right: 15px;
+  margin-left: 118px;
 }
 
 form {
   margin-bottom: 71px;
+}
+
+#contact-me form {
+  width: auto;
 }
 
 .footer {
