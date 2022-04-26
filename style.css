@@ -404,3 +404,98 @@ body {
   top: 3900px;
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
+
+#contact-me {
+  margin-top: 120px;
+  padding: 0 24px;
+  width: auto;
+  align-self: center;
+}
+
+.contact-me-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contact-me-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #9390ff;
+  margin-bottom: 24px;
+}
+
+#contact-me-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  margin-bottom: 40px;
+}
+
+#contact-me form {
+  width: auto;
+}
+
+form input {
+  width: 89%;
+  margin-bottom: 24px;
+  padding: 15px 16px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #191765;
+}
+
+.contact-me-name {
+  background: #f7f3ff;
+}
+
+.contact-me-email {
+  background: #fff;
+}
+
+form textarea {
+  width: 91.2%;
+  margin-bottom: 52px;
+  padding: 12px;
+  background: #fff;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+}
+
+form button {
+  border: none;
+  background: #7d73fc;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #edecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: auto;
+}
+
+form {
+  margin-bottom: 71px;
+}
