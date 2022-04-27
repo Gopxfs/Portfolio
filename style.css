@@ -10,7 +10,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   overflow: hidden;
-  background: url(images/background/Ellipse\ 18.png) no-repeat, url(/images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat; 
+  background: url(images/background/Ellipse\ 18.png) no-repeat, url(/images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat;
   background-color: #191765;
   background-position-x: 0, 0, 100%, 100%, 0, 100%;
   background-position-y: 55px, 1601px, 590px, 2399px, 3244px, 4065px;
