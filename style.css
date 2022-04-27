@@ -9,8 +9,11 @@ body {
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
-  background-color: #191765;
   overflow: hidden;
+  background: url(images/background/Ellipse\ 18.png) no-repeat, url(/images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat; 
+  background-color: #191765;
+  background-position-x: 0, 0, 100%, 100%, 0, 100%;
+  background-position-y: 55px, 1601px, 590px, 2399px, 3244px, 4065px;
 }
 
 #main {
@@ -421,7 +424,7 @@ hr {
 form input {
   width: 89%;
   margin-bottom: 24px;
-  padding: 15px 16px;
+  padding: 12px 13px;
   height: 25px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -456,6 +459,7 @@ form textarea {
   font-size: 15px;
   line-height: 24px;
   max-width: 333px;
+  padding: 12px 13px;
 }
 
 #submit-button {
@@ -487,57 +491,4 @@ form {
   text-align: center;
   color: #ebebff;
   margin-top: 0;
-}
-
-.light-effect {
-  position: absolute;
-  background: #edecff;
-  filter: blur(60px);
-}
-
-.big-light-ball {
-  width: 160px;
-  height: 160px;
-  left: -100px;
-  top: 97px;
-}
-
-.small-light-ball {
-  width: 68px;
-  height: 68px;
-  left: 339px;
-  top: 565px;
-  filter: blur(26px);
-}
-
-.ellipse1 {
-  top: 1424px;
-  width: 25px;
-  height: 482px;
-  left: -50px;
-  transform: rotate(-36.38deg);
-}
-
-.ellipse2 {
-  width: 70px;
-  height: 261px;
-  top: 2380px;
-  left: 405px;
-  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
-}
-
-.ellipse3 {
-  width: 308px;
-  height: 100px;
-  left: -120px;
-  top: 3240px;
-  filter: blur(100px);
-}
-
-.ellipse4 {
-  width: 70px;
-  height: 377px;
-  left: 258px;
-  top: 3900px;
-  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
