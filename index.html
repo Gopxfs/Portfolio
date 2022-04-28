@@ -26,7 +26,7 @@
             <li> <a href="#">Portfolio</a> </li>
             <li> <a href="#">About me</a> </li>
             <li> <a href="#">Contact</a> </li>
-            <li> <a href="#"> <img style="height: 18px" src="images/mail-icon.png"> </a> </li>
+            <li> <a href="#"> <img style="height: 18px" src="images/mail-icon.png" alt="Mail icon"> </a> </li>
           </ul>
         </nav>
     </header>
@@ -78,6 +78,7 @@
       <hr>
 
       <section id="contact-work">
+        <div class="contact-flex">
         <div class="contact-icons">
           <ul>
             <li><a href="https://github.com/Gopxfs" class="contact-github">
@@ -91,18 +92,24 @@
             </a></li>
           </ul>
         </div>
+        <div class="arrow-down-work first">          
+          <p class="hide-mobile arrow-work-text">Work</p>
+          <img class="hide-mobile arrow" height="21px" src="images/arrow-down.png" alt="Arrow down">
+        </div>
         <div class="arrow-down-work">
-          <div class="arrow"></div>
+          <img class="arrow" height="21px" src="images/arrow-down.png" alt="Arrow down">
           <p class="arrow-work-text">Work</p>
         </div>
+      </div>
        <h3 class="my-recent-work">MY RECENT WORK</h3>
       </section>
 
-      <hr>
+      <hr id="my-recent-work-hr">
 
       <section class ="work-grid">
         <section class="work-card">
           <div class="work-card-image-placeholder"></div>
+          <div class="project-info">
           <h3 class="work-card-project-title">Multi-Post Stories</h3>
           <p class="work-card-project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <ul>
@@ -115,10 +122,30 @@
             <li class="project-language">Ruby</li>
           </ul>
           <button type="button" class="project-button">See Project</button>
+        </div>
+        </section>
+
+        <section class="work-card work-card-reverse">
+          <div class="work-card-image-placeholder work-card-image-placeholder-reverse"></div>
+          <div class="project-info project-info-reverse">
+          <h3 class="work-card-project-title">Multi-Post Stories</h3>
+          <p class="work-card-project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+          <ul>
+            <li class="project-language">css</li>
+            <li class="languages-separation"></li>
+            <li class="project-language">html</li>
+            <li class="languages-separation"></li>
+            <li class="project-language">bootstrap</li>
+            <li class="languages-separation"></li>
+            <li class="project-language">Ruby</li>
+          </ul>
+          <button type="button" class="project-button">See Project</button>
+        </div>
         </section>
 
         <section class="work-card">
           <div class="work-card-image-placeholder"></div>
+          <div class="project-info">
           <h3 class="work-card-project-title">Multi-Post Stories</h3>
           <p class="work-card-project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <ul>
@@ -131,10 +158,12 @@
             <li class="project-language">Ruby</li>
           </ul>
           <button type="button" class="project-button">See Project</button>
+          </div>
         </section>
 
-        <section class="work-card">
-          <div class="work-card-image-placeholder"></div>
+        <section class="work-card work-card-reverse">
+          <div class="work-card-image-placeholder work-card-image-placeholder-reverse"></div>
+          <div class="project-info project-info-reverse">
           <h3 class="work-card-project-title">Multi-Post Stories</h3>
           <p class="work-card-project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <ul>
@@ -147,29 +176,15 @@
             <li class="project-language">Ruby</li>
           </ul>
           <button type="button" class="project-button">See Project</button>
-        </section>
-
-        <section class="work-card">
-          <div class="work-card-image-placeholder"></div>
-          <h3 class="work-card-project-title">Multi-Post Stories</h3>
-          <p class="work-card-project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-          <ul>
-            <li class="project-language">css</li>
-            <li class="languages-separation"></li>
-            <li class="project-language">html</li>
-            <li class="languages-separation"></li>
-            <li class="project-language">bootstrap</li>
-            <li class="languages-separation"></li>
-            <li class="project-language">Ruby</li>
-          </ul>
-          <button type="button" class="project-button">See Project</button>
+         </div>
         </section>
       </section>
 
       <section id="contact-me">
         <div class="contact-me-header">
-          <h2 id="contact-me-title">Contact me</h2>
-          <p id="contact-me-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+          <h2 class="hide-desktop contact-me-title">Contact me</h2>
+          <h2 class="hide-mobile contact-me-title">Let's chat!</h2>
+          <p class="contact-me-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
         </div>
         <form id="contact-form" action="https://formspree.io/f/xjvlpwgy" method="post">
           <input type="text" name="name" id="contact-me-name" maxlength="30" placeholder="Full name" required>
@@ -179,7 +194,7 @@
         </form>
       </section>
 
-      <hr>
+      <hr id="footer-hr">
       <footer class="footer">
         <div class="contact-icons">
           <ul>

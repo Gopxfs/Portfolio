@@ -26,6 +26,7 @@ hr {
   width: 75%;
 }
 
+
 .header-flex {
   display: flex;
   width: 100vw;
@@ -146,6 +147,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .about-me-languages-list {
@@ -218,10 +220,12 @@ hr {
 
 .arrow-down-work {
   display: flex;
-  align-content: center;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   width: auto;
+  gap:10px;
 }
 
 .arrow-work-text {
@@ -258,6 +262,15 @@ hr {
 .work-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100%;
   align-items: center;
@@ -265,11 +278,10 @@ hr {
 }
 
 .work-card-image-placeholder {
-  max-width: 500px;
-  width: 90%;
+  max-width: 327px;
+  width: 100%;
   min-height: 236px;
-  max-height: 300px;
-  height: 90%;
+  height: 100%;
   background-color: #f9f9f9;
   margin: 24px;
 }
@@ -299,7 +311,6 @@ hr {
 .work-card ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
   justify-content: space-between;
@@ -389,7 +400,7 @@ hr {
   align-items: center;
 }
 
-#contact-me-title {
+.contact-me-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -400,7 +411,7 @@ hr {
   margin-bottom: 24px;
 }
 
-#contact-me-description {
+.contact-me-description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -441,7 +452,7 @@ form input {
 }
 
 form textarea {
-  width: 100%;
+  width: 90%;
   margin-bottom: 52px;
   background: #fff;
   height: 148px;
@@ -489,7 +500,34 @@ form {
   display: none;
 }
 
+.hide-mobile {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  .page-flex {
+    background: url(images/background-desktop/circle\ 1\ header.png) no-repeat, url(images/background-desktop/circle\ 2\ header.png) no-repeat, url(images/background-desktop/Ellipse\ 19.png) no-repeat, url(images/background-desktop/Ellipse\ 20.png) no-repeat, url(images/background-desktop/Ellipse\ 21.png) no-repeat, url(images/background-desktop/Ellipse\ 22.png) no-repeat;
+    background-color: #191765;
+    background-position-x: 0, 100%, 0, 100%, 0, 100%;
+    background-position-y: 237px, 546px, 1480px, 2257px, 2848px, 2934px;
+  }
+
+  hr {
+    width: 33%;
+  }
+
+  .hide-mobile {
+    display: flex;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .first {
+    order: -1;
+  }
+
   .header-flex {
     align-self: center;
     width: 82%;
@@ -525,10 +563,173 @@ form {
     color: #fff;    
   }
 
-  .page-flex {
-    background: url(images/background-desktop/circle\ 1\ header.png) no-repeat, url(images/background-desktop/circle\ 2\ header.png) no-repeat, url(images/background-desktop/Ellipse\ 19.png) no-repeat, url(images/background-desktop/Ellipse\ 20.png) no-repeat, url(images/background-desktop/Ellipse\ 21.png) no-repeat, url(images/background-desktop/Ellipse\ 22.png) no-repeat;
-    background-color: #191765;
-    background-position-x: 0, 100%, 0, 100%, 0, 100%;
-    background-position-y: 237px, 546px, 1480px, 2257px, 2848px, 2934px;
+  .headline-heading-name {
+    font-size: 90px;
+    line-height: 105px;
   }
+
+  .headline-heading-occupation {
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: -66px;
+  }
+
+  .headline-description-placeholder {
+    width: 33%;
+  }
+
+  .about-me-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .about-me-flex {
+    align-self: center;
+    width: 50%;
+  }
+
+  .about-me-languages-list {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-right: 15px;
+  }
+
+  .contact-flex {
+    display: flex;
+    margin-top: 66px;
+    justify-content: space-between;
+    align-self: center;
+    width: 50%;
+  }
+
+  .my-recent-work {
+    margin-top: 150px;
+    width: 75%;
+  }
+
+  #my-recent-work-hr {
+    width: 75%;
+  }
+
+  .work-grid {
+    width: 75%;
+    align-self: center;
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 25px;
+  }
+
+  .work-card {
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-self: center;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 448px;
+    margin-top: 75px;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: none;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    margin-top: 50px;
+  }
+
+  .work-card-image-placeholder {
+    margin: 0;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    max-width: 100%;
+    max-height: 448px;
+  }
+
+  .work-card-project-title, 
+  .work-card-project-description { 
+    margin: 24px;
+  }
+
+  .work-card ul {
+    margin: 0px;
+    height: 40px;
+    width: 50%;
+  }
+
+  .project-button {
+    text-align: center;
+    margin: 24px;
+    height: 48px;
+    width: 106px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .work-card-reverse {
+    display: grid;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-self: center;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 448px;
+    margin-top: 50px;
+  }
+
+  .project-info-reverse {
+    display: flex;
+    flex-direction: column;
+    justify-items: none;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+  }
+
+  .work-card-image-placeholder-reverse {
+    margin: 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    max-width: 100%;
+    max-height: 448px;
+  }
+
+  .contact-me-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+  }
+
+  .contact-me-description {
+    width: 55%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #contact-me-name,
+  #contact-me-email,
+  #contact-me-message {
+    max-width: 684px;
+  }
+  
+  #footer-hr {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-icons ul {
+    margin: 25px;
+  }
+
+  .footer-email {
+    margin: 25px;
+  }
+
 }
