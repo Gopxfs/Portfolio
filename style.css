@@ -26,7 +26,6 @@ hr {
   width: 75%;
 }
 
-
 .header-flex {
   display: flex;
   width: 100vw;
@@ -61,6 +60,10 @@ hr {
 
 .header-button:hover {
   box-shadow: 0 8px 16px;
+}
+
+.mail-icon {
+  height: 18px;
 }
 
 .header-menu-placeholder {
@@ -218,6 +221,10 @@ hr {
   margin-bottom: 5px;
 }
 
+.arrow {
+  height: 21px;
+}
+
 .arrow-down-work {
   display: flex;
   flex-direction: row;
@@ -225,7 +232,7 @@ hr {
   justify-content: center;
   margin-bottom: 30px;
   width: auto;
-  gap:10px;
+  gap: 10px;
 }
 
 .arrow-work-text {
@@ -536,7 +543,7 @@ form {
   .header-button {
     display: none;
   }
-  
+
   .desktop-menu {
     display: contents;
   }
@@ -556,11 +563,11 @@ form {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15x;
+    font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.03em;
     text-decoration: none;
-    color: #fff;    
+    color: #fff;
   }
 
   .headline-heading-name {
@@ -648,13 +655,13 @@ form {
     max-height: 448px;
   }
 
-  .work-card-project-title, 
-  .work-card-project-description { 
+  .work-card-project-title,
+  .work-card-project-description {
     margin: 24px;
   }
 
   .work-card ul {
-    margin: 0px;
+    margin: 0;
     height: 40px;
     width: 50%;
   }
@@ -713,7 +720,7 @@ form {
   #contact-me-message {
     max-width: 684px;
   }
-  
+
   #footer-hr {
     width: 100%;
   }
@@ -731,5 +738,4 @@ form {
   .footer-email {
     margin: 25px;
   }
-
 }
