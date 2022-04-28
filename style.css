@@ -45,6 +45,9 @@ hr {
   color: #fff;
   text-decoration: none;
   padding: 15px;
+  transform: rotate(360deg);
+  transition-delay: 1s;
+  transition-duration: 1s;
 }
 
 .header-button {
@@ -719,6 +722,10 @@ form {
     width: 55%;
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .contact-me-description:hover {
+    transform: translate(20px, 40px);
   }
 
   #contact-me-name,
