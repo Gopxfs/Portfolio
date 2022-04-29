@@ -56,6 +56,7 @@ hr {
   align-items: center;
   background-color: #191765;
   border: none;
+  transition: box-shadow 0.2s ease-out;
 }
 
 .header-button:hover {
@@ -512,6 +513,21 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  @keyframes appearFromBottom {
+    0% {
+      transform: translateY(-90%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  body {
+    animation: 3.25s ease-out 0s 1 appearFromBottom;
+    background: #191765;
+  }
+
   .page-flex {
     background: url(images/background-desktop/circle\ 1\ header.png) no-repeat, url(images/background-desktop/circle\ 2\ header.png) no-repeat, url(images/background-desktop/Ellipse\ 19.png) no-repeat, url(images/background-desktop/Ellipse\ 20.png) no-repeat, url(images/background-desktop/Ellipse\ 21.png) no-repeat, url(images/background-desktop/Ellipse\ 22.png) no-repeat;
     background-color: #191765;
@@ -655,6 +671,10 @@ form {
     max-height: 448px;
   }
 
+  .work-card-image-placeholder:hover {
+    transform: scale(1.05);
+  }
+
   .work-card-project-title,
   .work-card-project-description {
     margin: 24px;
@@ -673,6 +693,7 @@ form {
     width: 106px;
     font-size: 15px;
     padding: 0;
+    transition: box-shadow 0.2s ease-out, color 2s ease-out;
   }
 
   .work-card-reverse {
