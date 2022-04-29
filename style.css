@@ -517,6 +517,7 @@ form {
     0% {
       transform: translateY(-90%);
     }
+
     100% {
       transform: translateY(0);
     }
@@ -524,7 +525,7 @@ form {
 
   body {
     animation: 3.25s ease-out 0s 1 appearFromBottom;
-    background: #191765
+    background: #191765;
   }
 
   .page-flex {
@@ -671,7 +672,7 @@ form {
   }
 
   .work-card-image-placeholder:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
   }
 
   .work-card-project-title,
@@ -733,9 +734,6 @@ form {
     width: 55%;
     font-size: 20px;
     line-height: 28px;
-  }
-
-  .contact-me-description:hover {
   }
 
   #contact-me-name,
