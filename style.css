@@ -45,9 +45,6 @@ hr {
   color: #fff;
   text-decoration: none;
   padding: 15px;
-  transform: rotate(360deg);
-  transition-delay: 1s;
-  transition-duration: 1s;
 }
 
 .header-button {
@@ -59,6 +56,7 @@ hr {
   align-items: center;
   background-color: #191765;
   border: none;
+  transition: box-shadow 0.2s ease-out;
 }
 
 .header-button:hover {
@@ -362,12 +360,10 @@ hr {
   line-height: 24px;
   letter-spacing: 0.03em;
   padding: 20px;
-  transition: box-shadow 0.2s ease-out, color 2s ease-out;
 }
 
 .project-button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  color:#2e2e8d;
 }
 
 .project-button:active {
@@ -517,6 +513,20 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  @keyframes appearFromBottom {
+    0% {
+      transform: translateY(-90%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  body {
+    animation: 3.25s ease-out 0s 1 appearFromBottom;
+    background: #191765
+  }
+
   .page-flex {
     background: url(images/background-desktop/circle\ 1\ header.png) no-repeat, url(images/background-desktop/circle\ 2\ header.png) no-repeat, url(images/background-desktop/Ellipse\ 19.png) no-repeat, url(images/background-desktop/Ellipse\ 20.png) no-repeat, url(images/background-desktop/Ellipse\ 21.png) no-repeat, url(images/background-desktop/Ellipse\ 22.png) no-repeat;
     background-color: #191765;
@@ -682,6 +692,7 @@ form {
     width: 106px;
     font-size: 15px;
     padding: 0;
+    transition: box-shadow 0.2s ease-out, color 2s ease-out;
   }
 
   .work-card-reverse {
@@ -725,7 +736,6 @@ form {
   }
 
   .contact-me-description:hover {
-    transform: translate(20px, 40px);
   }
 
   #contact-me-name,
