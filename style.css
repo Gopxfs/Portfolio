@@ -519,7 +519,7 @@ form {
 @media screen and (min-width: 768px) {
   @keyframes appearFromBottom {
     0% {
-      transform: translateY(-90%);
+      transform: translateY(-3750px);
     }
 
     100% {
@@ -528,7 +528,7 @@ form {
   }
 
   body {
-    animation: 2.5s ease-out 0s 1 appearFromBottom;
+    animation: 3.25s ease-out 0s 1 appearFromBottom;
     background: #191765;
   }
 
