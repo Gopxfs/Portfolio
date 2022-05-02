@@ -5,6 +5,9 @@
 - HTML
 - CSS
 
+## Live Demo
+[Live Demo](https://gopxfs.github.io/Portfolio/)
+
 ## Getting Started:
 To access my portfolio:
 ### Setup
