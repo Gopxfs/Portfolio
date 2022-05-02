@@ -22,6 +22,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 hr {
   width: 75%;
 }
@@ -573,6 +577,7 @@ form {
 
   .desktop-menu ul li {
     list-style-type: none;
+    scroll-behavior: smooth;
   }
 
   .desktop-menu ul li a {
