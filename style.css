@@ -84,70 +84,10 @@ hr {
   background-color: #fff;
 }
 
-#header-flex.active {
-  position: fixed;
-  height: 100vh;
-  z-index: 1;
-  background: url(images/background/menu-ellipse1.png) no-repeat, url(images/background/menu-ellipse2.png) no-repeat;
-  background-color: #191765;
-  background-position-x: left, right;
-  background-position-y: 20%, bottom;
-}
-
-#header-flex.active .header-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#header-flex.active .header-menu-icon-close {
-  display: block;
-} 
-
-#header-flex.active .desktop-menu {
-  display: flex;
-}
-
-#header-flex.active .desktop-menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 15px;
-  height: 75vh;
-  width: 100vw;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: -5%;
-}
-
-#header-flex.active .desktop-menu ul li {
-  list-style-type: none;
-  scroll-behavior: smooth;
-  margin: 12px 0;
-}
-
-#header-flex.active .desktop-menu ul li a {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #fff;
- 
-}
-
 .header-menu-icon-close {
   display: none;
   height: 20px;
   width: 20px;
-}
-
-#header-flex.active .header-menu-icon,
-#header-flex.active .header-logo,
-#header-flex.active .mail-icon {
-  display: none;
 }
 
 .headline-flex {
@@ -575,6 +515,65 @@ form {
 }
 
 .hide-mobile {
+  display: none;
+}
+
+#header-flex.active {
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  background: url(images/background/menu-ellipse1.png) no-repeat, url(images/background/menu-ellipse2.png) no-repeat;
+  background-color: #191765;
+  background-position-x: left, right;
+  background-position-y: 20%, bottom;
+}
+
+#header-flex.active .header-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header-flex.active .header-menu-icon-close {
+  display: block;
+}
+
+#header-flex.active .desktop-menu {
+  display: flex;
+}
+
+#header-flex.active .desktop-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  height: 75vh;
+  width: 100vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -5%;
+}
+
+#header-flex.active .desktop-menu ul li {
+  list-style-type: none;
+  scroll-behavior: smooth;
+  margin: 12px 0;
+}
+
+#header-flex.active .desktop-menu ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #fff;
+}
+
+#header-flex.active .header-menu-icon,
+#header-flex.active .header-logo,
+#header-flex.active .mail-icon {
   display: none;
 }
 
