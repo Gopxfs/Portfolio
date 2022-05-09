@@ -4,7 +4,7 @@
 ## Built With:
 - Html
 - Css
-- Javascript
+- JavaScript
 
 ## Live Demo
 [Live Demo](https://gopxfs.github.io/Portfolio/)
@@ -26,8 +26,9 @@ To edit this portfolio:
 - Linkedin: [Gabriel Fonseca](https://www.linkedin.com/in/gabriel-fonseca-sales-8bb64b236/)
 
 ## Show your support
-Give a :star: if you like this project!
+Give a :star: if you like my portfolio!
 
 ## Acknowledgments
-Thanks to Microverse for the structure to let me learn more.
-Thanks to my coding partners for the help and company while coding.
+Huge thanks to:<br>
+Microverse, for the structure to let me learn more.<br>
+My coding partners, for the help and companionship while coding.
