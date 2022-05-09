@@ -550,17 +550,19 @@ form {
 .desktop-menu ul li {
   list-style-type: none;
   scroll-behavior: smooth;
+  margin: 12px 0;
 }
 
 .desktop-menu ul li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 24px;
   line-height: 20px;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #fff;
+ 
 }
 
 .header-menu-icon-close {
