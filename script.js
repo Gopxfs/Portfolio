@@ -10,6 +10,6 @@ const menuOptions = document.getElementsByClassName('menu-option');
 
 // When clicked, the elements are going to execute the toggleMenu function
 headerButton.addEventListener('click', toggleMenu);
-for (let i=0; i<menuOptions.length; i++) {
+for (let i = 0; i < menuOptions.length; i += 1) {
   menuOptions[i].addEventListener('click', toggleMenu);
 }
