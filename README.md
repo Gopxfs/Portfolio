@@ -1,5 +1,5 @@
 # Portfolio
-> Welcome to my portfolio!
+> This is my portfolio. In this project, you will find information about myself, alongside the projects I recently made. Also, feel free to contact me using the contact form.
 
 ## Built With:
 - Html
@@ -24,6 +24,13 @@ To edit this portfolio:
 :bust_in_silhouette: Gabriel Fonseca
 - Github: [@Gopxfs](https://github.com/Gopxfs)
 - Linkedin: [Gabriel Fonseca](https://www.linkedin.com/in/gabriel-fonseca-sales-8bb64b236/)
+### Collaborators:
+:bust_in_silhouette: John Nduati
+- Github: [@NduatiKagiri](https://github.com/NduatiKagiri)
+- Linkedin: [Nduati Kagiri](https://www.linkedin.com/in/nduati-kagiri-5414a4225/)
+:bust_in_silhouette: Chuma Achike
+- Github: [@chumaachike](https://github.com/chumaachike)
+- Linkedin: [Chuma Achike](https://www.linkedin.com/in/edward-achike-903432111/)
 
 ## Show your support
 Give a :star: if you like my portfolio!
