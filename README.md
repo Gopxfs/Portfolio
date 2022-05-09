@@ -2,8 +2,9 @@
 > Welcome to my portfolio!
 
 ## Built With:
-- HTML
-- CSS
+- Html
+- Css
+- Javascript
 
 ## Live Demo
 [Live Demo](https://gopxfs.github.io/Portfolio/)
@@ -17,7 +18,7 @@ To access my portfolio:
 To edit this portfolio:
 - Open the repository you cloned with a code editor that you like.
 - Edit the code as you want.
-- Use [Microverse linters config to HTML + CSS](https://github.com/microverseinc/linters-config/tree/master/html-css) 
+- Use [Microverse linters config to HTML + CSS + JS](https://github.com/microverseinc/linters-config/tree/master/html-css-js) 
 
 ## Authors:
 :bust_in_silhouette: Gabriel Fonseca
@@ -29,3 +30,4 @@ Give a :star: if you like this project!
 
 ## Acknowledgments
 Thanks to Microverse for the structure to let me learn more.
+Thanks to my coding partners for the help and company while coding.
