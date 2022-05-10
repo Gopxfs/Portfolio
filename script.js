@@ -6,7 +6,7 @@ function toggleMenu() {
 
 // Creating the variables to apply the toggleMenu function to
 const headerButton = document.getElementById('header-button');
-const menuOptions = document.getElementsByClassName('menu-option');
+const menuOptions = document.getElementsByClassName('option-flex');
 
 // When clicked, the elements are going to execute the toggleMenu function
 headerButton.addEventListener('click', toggleMenu);
