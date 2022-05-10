@@ -130,7 +130,7 @@
             <li class="languages-separation"></li>
             <li class="project-language">Ruby</li>
           </ul>
-          <button type="button" class="project-button">See Project</button>
+          <button type="button" class="project-button popup-project-window" id="project-button1">See Project</button>
         </div>
         </section>
 
@@ -148,7 +148,7 @@
             <li class="languages-separation"></li>
             <li class="project-language">Ruby</li>
           </ul>
-          <button type="button" class="project-button">See Project</button>
+          <button type="button" class="project-button popup-project-window" id="project-button2">See Project</button>
         </div>
         </section>
 
@@ -166,7 +166,7 @@
             <li class="languages-separation"></li>
             <li class="project-language">Ruby</li>
           </ul>
-          <button type="button" class="project-button">See Project</button>
+          <button type="button" class="project-button popup-project-window" id="project-button3">See Project</button>
           </div>
         </section>
 
@@ -184,20 +184,20 @@
             <li class="languages-separation"></li>
             <li class="project-language">Ruby</li>
           </ul>
-          <button type="button" class="project-button">See Project</button>
+          <button type="button" class="project-button popup-project-window" id="project-button4">See Project</button>
          </div>
         </section>
       </section>
 
       <section id="popup-project">
-        <h2 class="work-card-project-title popup-title"></h2>
-        <img class="popup-image">
-        <p class="work-card-project-description popup-description"></p>
+        <h2 class="work-card-project-title" id="popup-title"></h2>
+        <img id="popup-image">
+        <p class="work-card-project-description" id="popup-description"></p>
         <ul id="popup-technologies"></ul>
         <div id="popup-footer">
           <span id="previous-page"></span>
-          <button id="live-link" class="project-button">See Live</button>
-          <button id="source-link" class="project-button">See Source</button>
+          <a id="live-link"><button class="project-button">See Live</button></a>
+          <a id="source-link"><button id="source-link" class="project-button">See Source</button></a>
           <span id="next-page"></span>
         </div>
       </section>
