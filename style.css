@@ -510,7 +510,8 @@ form {
   margin-top: 0;
 }
 
-.desktop-menu {
+.desktop-menu,
+.mobile-menu {
   display: none;
 }
 
@@ -538,7 +539,7 @@ form {
   display: block;
 }
 
-#header-flex.active .desktop-menu {
+#header-flex.active .mobile-menu {
   display: flex;
 }
 
@@ -560,7 +561,7 @@ form {
   margin-right: 5%;
 }
 
-#header-flex.active .desktop-menu ul {
+#header-flex.active .mobile-menu ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -572,13 +573,13 @@ form {
   margin-top: -5%;
 }
 
-#header-flex.active .desktop-menu ul li {
+#header-flex.active .mobile-menu ul li {
   list-style-type: none;
   scroll-behavior: smooth;
   margin: 12px 0;
 }
 
-#header-flex.active .desktop-menu ul li a {
+#header-flex.active .mobile-menu ul li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -840,5 +841,9 @@ form {
 
   .footer-email {
     margin: 25px;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
