@@ -4,10 +4,9 @@ function toggleMenu() {
   menu.classList.toggle('active');
 }
 
-// Variables that execute the toggleMenu
+// Execute the toggleMenu function in these variables
 const headerButton = document.getElementById('header-button');
 const menuOptions = document.getElementsByClassName('mobile-menu-options');
-// Execute the toggleMenu function in these variables
 headerButton.addEventListener('click', toggleMenu);
 for (let i = 0; i < menuOptions.length; i += 1) {
   menuOptions[i].addEventListener('click', toggleMenu);
@@ -35,7 +34,7 @@ const projects = [
   ,
   {
     name: "Multi-Post Stories3",
-    description: "3A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    description: "3Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
     image: "images/project-images/image-placeholder3.jpg",
     technologies: ["html", "Ruby on rails", "css", "Github"],
     liveVersion: "live.link",
@@ -58,6 +57,13 @@ function selectProject(projectNumber) {
   document.getElementById('popup-image').src = projects[projectNumber].image;
   document.getElementById('live-link').href = projects[projectNumber].liveVersion;
   document.getElementById('source-link').href = projects[projectNumber].source;
+  let technologiesList = document.getElementById('popup-technologies');
+  let listItem;
+  for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
+    listItem = document.createElement('li');
+    listItem.appendChild(document.createTextNode(projects[projectNumber].technologies[i]));
+    technologiesList.appendChild(listItem);
+  }
 }
 // Execute the selectProject function in these variables
   const project1 = document.getElementById('project-button1');
