@@ -550,8 +550,8 @@ form {
 }
 
 .mobile-menu-arrow {
-    display: none;
-    margin-right: 15%;
+  display: none;
+  margin-right: 15%;
 }
 
 #header-flex.active .mobile-menu-arrow {
