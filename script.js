@@ -59,6 +59,7 @@ function selectProject(projectNumber) {
   document.getElementById('source-link').href = projects[projectNumber].source;
   let technologiesList = document.getElementById('popup-technologies');
   let listItem;
+  technologiesList.innerHTML = '';
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
     listItem = document.createElement('li');
     listItem.appendChild(document.createTextNode(projects[projectNumber].technologies[i]));

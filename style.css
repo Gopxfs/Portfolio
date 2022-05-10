@@ -426,7 +426,7 @@ hr {
   flex-direction: row;
   list-style-type: none;
   justify-content: center;
-  width: 85%;
+  width: 80%;
 }
 
 #popup-project.active ul li {
@@ -441,6 +441,18 @@ hr {
   padding: 1%;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+#X-icon {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 35px;
+  top: 1%;
+  right: 8%;
+  color: #fff;
+  background: none;
+  border: none;
 }
 
 #popup-project.active #popup-footer {
