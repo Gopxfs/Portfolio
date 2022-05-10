@@ -28,6 +28,7 @@ To edit this portfolio:
 :bust_in_silhouette: John Nduati
 - Github: [@NduatiKagiri](https://github.com/NduatiKagiri)
 - Linkedin: [Nduati Kagiri](https://www.linkedin.com/in/nduati-kagiri-5414a4225/)<br>
+
 :bust_in_silhouette: Chuma Achike
 - Github: [@chumaachike](https://github.com/chumaachike)
 - Linkedin: [Chuma Achike](https://www.linkedin.com/in/edward-achike-903432111/)
