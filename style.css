@@ -619,6 +619,10 @@ form {
     background-position-y: 237px, 546px, 1480px, 2257px, 2848px, 2934px;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   hr {
     width: 33%;
   }
