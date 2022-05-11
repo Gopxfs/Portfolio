@@ -6,6 +6,21 @@ body {
 
 body.active {
   overflow: hidden;
+  background-color: #191765;
+}
+
+.contact-icons * {
+  width: 18px;
+  min-height: 20px;
+}
+
+body.active * {
+  visibility: hidden;
+}
+
+#popup-project.active,
+#popup-project.active * {
+  visibility: visible;
 }
 
 .page-flex {
@@ -210,11 +225,6 @@ hr {
   flex-wrap: wrap;
   width: auto;
   justify-content: center;
-}
-
-.contact-icons * {
-  width: 18px;
-  min-height: 20px;
 }
 
 .contact-icons ul {
@@ -498,7 +508,7 @@ hr {
   background-repeat: no-repeat;
   background-position-y: center;
   text-decoration: none;
-  text-align: start
+  text-align: start;
 }
 
 #contact-work {
@@ -1015,6 +1025,7 @@ form {
     right: 2%;
     color: #fff;
   }
+
   #popup-project.active #popup-footer {
     flex-wrap: wrap;
     display: flex;
