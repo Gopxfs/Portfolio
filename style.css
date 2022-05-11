@@ -401,7 +401,7 @@ hr {
   backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.16);
   border: 1px solid #fff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   margin-top: -50px;
   overflow: hidden;
 }
@@ -476,17 +476,16 @@ hr {
 }
 
 #popup-project.active #live-button,
- #popup-project.active #source-button{
-   margin: 12px;
-   font-size: 12px;
-   line-height: 24px;
-   height: auto;
-   background-size: 18px, 20px;
-   background-repeat: no-repeat;
-   background-position-y: center;
-   text-align: start;
+#popup-project.active #source-button {
+  margin: 12px;
+  font-size: 12px;
+  line-height: 24px;
+  height: auto;
+  background-size: 18px, 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  text-align: start;
  }
-
 
 #source-button {
   background-image: url(images/github-icon.png);
@@ -716,7 +715,7 @@ form {
 }
 
 @media screen and (min-width: 768px) {
-  /*@keyframes appearFromBottom {
+  @keyframes appearFromBottom {
     0% {
       transform: translateY(-3750px);
     }
@@ -724,7 +723,7 @@ form {
     100% {
       transform: translateY(0);
     }
-  }  */
+  } 
 
   body {
     animation: 3.25s ease-out 0s 1 appearFromBottom;
@@ -946,7 +945,7 @@ form {
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.16);
     border: 1px solid #fff;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     margin-top: -66px;
   }
   
@@ -979,6 +978,10 @@ form {
     height: auto;
   }
   
+  .contact-icons ul {
+    margin: 25px;
+  }
+
   #popup-project.active ul {
     display: flex;
     flex-direction: row;
@@ -1029,12 +1032,12 @@ form {
   }
   
   #popup-project.active #live-button,
-   #popup-project.active #source-button{
-     margin: 12px;
-     font-size: 12px;
-     line-height: 24px;
-     height: 48px;
-     padding-left: 15px;
+  #popup-project.active #source-button{
+    margin: 12px;
+    font-size: 12px;
+    line-height: 24px;
+    height: 48px;
+    padding-left: 15px;
   }
 
   .contact-me-title {
@@ -1063,10 +1066,6 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-
-  .contact-icons ul {
-    margin: 25px;
   }
 
   .footer-email {
