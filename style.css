@@ -4,13 +4,17 @@ body {
   box-sizing: border-box;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 .page-flex {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
   overflow: hidden;
-  background: url(images/background/Ellipse\ 18.png) no-repeat, url(/images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat;
+  background: url(images/background/Ellipse\ 18.png) no-repeat, url(images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat;
   background-color: #191765;
   background-position-x: 0, 0, 100%, 100%, 0, 100%;
   background-position-y: 55px, 1601px, 590px, 2399px, 3244px, 4065px;
@@ -393,7 +397,7 @@ hr {
   justify-self: center;
   height: 95%;
   width: 95%;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.16);
   border: 1px solid #fff;
@@ -477,6 +481,23 @@ hr {
    font-size: 12px;
    line-height: 24px;
    height: auto;
+   background-size: 18px, 20px;
+   background-repeat: no-repeat;
+   background-position-y: center;
+   text-align: start;
+ }
+
+
+#source-button {
+  background-image: url(images/github-icon.png);
+  background-position-x: 95px;
+  width: 124px;
+}
+
+#live-button {
+  background-image: url(images/live-icon.png);
+  background-position-x: 85px;
+  width: 115px;
 }
 
 #contact-work {
@@ -922,7 +943,6 @@ form {
     height: 95%;
     width: 85%;
     max-width: 1060px;
-    z-index: 1;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.16);
     border: 1px solid #fff;
@@ -1014,6 +1034,7 @@ form {
      font-size: 12px;
      line-height: 24px;
      height: 48px;
+     padding-left: 15px;
   }
 
   .contact-me-title {

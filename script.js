@@ -89,7 +89,11 @@ function selectProject(projectNumber) {
 // Function to open the pop up window
   function togglePopupWindow() {
   const popupWindow = document.getElementById('popup-project');
+  const body = document.getElementsByTagName("BODY")[0];
+  const pageFlex = document.getElementsByClassName('page-flex');
   popupWindow.classList.toggle('active');
+  body.classList.toggle ("active");
+  pageFlex[0].classList.toggle ("active");
   }
 // Execute the togglePopupWindow function in these variables
   const toggleProjectWindow = document.getElementsByClassName('popup-project-window');
