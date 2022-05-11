@@ -962,6 +962,8 @@ form {
     margin: 1%;
     margin-top: 2%;
     margin-left: 2.5%;
+    max-width: 860px;
+    align-self: center;
     width: 96%;
     max-height: 50%;
     height: auto;
