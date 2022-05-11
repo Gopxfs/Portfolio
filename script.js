@@ -17,7 +17,7 @@ const projects = [
   {
     name: 'Multi-Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    mobileDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    shortDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     image: 'images/project-images/image-placeholder3.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'Github'],
     liveVersion: 'live.link',
@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Multi-Post Stories2',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    mobileDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    shortDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     image: 'images/project-images/image-placeholder4.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'Github'],
     liveVersion: 'live.link',
@@ -35,7 +35,7 @@ const projects = [
   {
     name: 'Multi-Post Stories3',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    mobileDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    shortDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     image: 'images/project-images/image-placeholder3.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'Github'],
     liveVersion: 'live.link',
@@ -44,18 +44,72 @@ const projects = [
   {
     name: 'Multi-Post Stories4',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    mobileDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    shortDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     image: 'images/project-images/image-placeholder4.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'Github'],
     liveVersion: 'live.link',
     source: 'source.link',
   },
 ];
+
+const projectGrid = document.getElementById('project-grid');
+// Iterate throught all the projects
+for (let projectNumber = 0; projectNumber < projects.length; projectNumber += 1) {
+  // Creating new HTML elements
+  let projectCard = document.createElement('section');
+  let projectImg = document.createElement('img');
+  let projectInfo = document.createElement('div');
+  let projectTitle = document.createElement('h3');
+  let projectDescription = document.createElement('p');
+  let projectTechnologies = document.createElement('ul');
+  let projectButton = document.createElement('button');
+  projectButton.type = 'button';
+
+  // Giving classes to elements
+  projectCard.classList.add('work-card');
+  projectImg.classList.add('work-card-image-placeholder');
+  projectInfo.classList.add('project-info');
+  projectTitle.classList.add('work-card-project-title');
+  projectDescription.classList.add('work-card-project-description');
+  projectButton.classList.add('project-button', 'popup-project-window');
+
+  // Appending the elements
+  projectGrid.appendChild(projectCard);
+  projectCard.appendChild(projectImg);
+  projectCard.appendChild(projectInfo);
+  projectInfo.appendChild(projectTitle);
+  projectInfo.appendChild(projectDescription);
+  projectInfo.appendChild(projectTechnologies);
+  projectInfo.appendChild(projectButton);
+
+  if (projectNumber % 2 !== 0) {
+    projectCard.classList.add('work-card-reverse');
+    projectImg.classList.add('work-card-image-placeholder-reverse');
+    projectInfo.classList.add('project-info-reverse');
+  }
+
+  // Adding technologies to the UL
+    for (let i = 0; i < projects[projectNumber].technologies.length; i += 1){
+       let listItem = document.createElement('li');
+       listItem.classList.add('project-language');
+       listItem.innerHTML = projects[projectNumber].technologies[i];
+       projectTechnologies.appendChild(listItem);
+  }
+
+  // Filling the elements information
+    projectImg.src = projects[projectNumber].image;
+    projectImg.alt = 'Project '+[projectNumber]+'image';
+    projectTitle.innerHTML = projects[projectNumber].name;
+    projectDescription.innerHTML = projects[projectNumber].shortDescription;
+    projectButton.innerHTML = 'See Project';
+    projectButton.setAttribute('id','project-button'+projectNumber);
+  }
+
 // Function to change the popup project properties based on which button was clicked
 function selectProject(projectNumber) {
   const mediaQuery = window.matchMedia('(min-width: 768px)');
   if (!mediaQuery.matches) {
-    document.getElementById('popup-description').innerHTML = projects[projectNumber].mobileDescription;
+    document.getElementById('popup-description').innerHTML = projects[projectNumber].shortDescription;
   } else {
     document.getElementById('popup-description').innerHTML = projects[projectNumber].description;
   }
@@ -73,10 +127,10 @@ function selectProject(projectNumber) {
   }
 }
 // Execute the selectProject function in these variables
-const project1 = document.getElementById('project-button1');
-const project2 = document.getElementById('project-button2');
-const project3 = document.getElementById('project-button3');
-const project4 = document.getElementById('project-button4');
+const project1 = document.getElementById('project-button0');
+const project2 = document.getElementById('project-button1');
+const project3 = document.getElementById('project-button2');
+const project4 = document.getElementById('project-button3');
 project1.addEventListener('click', () => { selectProject(0); });
 project2.addEventListener('click', () => { selectProject(1); });
 project3.addEventListener('click', () => { selectProject(2); });
