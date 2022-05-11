@@ -389,14 +389,17 @@ hr {
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 100vh;
-  width: 100vw;
+  align-self: center;
+  justify-self: center;
+  height: 95%;
+  width: 95%;
   z-index: 1;
   backdrop-filter: blur(8px);
-  background-color: #1a17657c;
+  background-color: rgba(255, 255, 255, 0.16);
   border: 1px solid #fff;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  margin-top: -66px;
+  margin-top: -50px;
+  overflow: hidden;
 }
 
 #popup-project.active #popup-title {
@@ -409,7 +412,7 @@ hr {
 #popup-project.active #popup-image {
   margin: 4%;
   width: 90%;
-  height: auto;
+  height: 40%;
 }
 
 #popup-project.active #popup-description {
@@ -447,16 +450,16 @@ hr {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   position: absolute;
-  font-size: 35px;
-  top: 1%;
-  right: 8%;
+  font-size: 22px;
+  top: 2.5%;
+  right: 6.5%;
   color: #fff;
   background: none;
   border: none;
+  height: 2px;
 }
 
 #popup-project.active #popup-footer {
-  float: bottom;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
@@ -464,7 +467,8 @@ hr {
   align-items: center;
   margin: 0;
   width: 100%;
-  height: 25%;
+  height: 23%;
+  margin-top: -10px;
 }
 
 #popup-project.active #live-button,
@@ -472,6 +476,7 @@ hr {
    margin: 12px;
    font-size: 12px;
    line-height: 24px;
+   height: auto;
 }
 
 #contact-work {
@@ -690,7 +695,7 @@ form {
 }
 
 @media screen and (min-width: 768px) {
-  @keyframes appearFromBottom {
+  /*@keyframes appearFromBottom {
     0% {
       transform: translateY(-3750px);
     }
@@ -698,7 +703,7 @@ form {
     100% {
       transform: translateY(0);
     }
-  }
+  }  */
 
   body {
     animation: 3.25s ease-out 0s 1 appearFromBottom;
@@ -906,6 +911,106 @@ form {
 
   #popup-project {
     display: none;
+  }
+  
+  #popup-project.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-self: center;
+    justify-self: center;
+    height: 95%;
+    width: 85%;
+    max-width: 860px;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid #fff;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    margin-top: -66px;
+  }
+  
+  #popup-project.active #popup-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+  }
+  
+  #popup-project.active #popup-image {
+    margin: 1%;
+    margin-top: 2%;
+    width: 98%;
+    height: 50%;
+  }
+  
+  #popup-project.active #popup-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 2%;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+  }
+  
+  #popup-project.active ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+  }
+  
+  #popup-project.active ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    border: 1px solid #81818c;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  #X-icon {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 35px;
+    top: 0.5%;
+    right: 2%;
+    color: #fff;
+    background: none;
+    border: none;
+  }
+  
+  #popup-project.active #popup-footer {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    margin-top: 0;
+    gap: 15px;
+  }
+  
+  #popup-project.active #live-button,
+   #popup-project.active #source-button{
+     margin: 12px;
+     font-size: 12px;
+     line-height: 24px;
+     height: 48px;
   }
 
   .contact-me-title {
