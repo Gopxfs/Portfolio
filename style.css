@@ -921,7 +921,7 @@ form {
     justify-self: center;
     height: 95%;
     width: 85%;
-    max-width: 860px;
+    max-width: 1060px;
     z-index: 1;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.16);
@@ -934,6 +934,7 @@ form {
     font-size: 20px;
     line-height: 28px;
     margin: 1%;
+    margin-left: 2.5%;
     margin-top: 1.5%;
     margin-bottom: 0;
   }
@@ -941,8 +942,10 @@ form {
   #popup-project.active #popup-image {
     margin: 1%;
     margin-top: 2%;
-    width: 98%;
-    height: 50%;
+    margin-left: 2.5%;
+    width: 96%;
+    max-height: 50%;
+    height: auto;
   }
   
   #popup-project.active #popup-description {
@@ -1051,5 +1054,11 @@ form {
 
   .mobile-menu {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  #popup-project.active #popup-description {
+    line-height: 22px;
   }
 }
