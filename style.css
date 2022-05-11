@@ -413,7 +413,8 @@ hr {
   border: 1px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   margin-top: -50px;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #popup-project.active #popup-title {
