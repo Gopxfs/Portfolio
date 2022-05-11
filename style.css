@@ -1015,11 +1015,6 @@ form {
     right: 2%;
     color: #fff;
   }
-
-  #X-icon-image {
-
-  }
-
   #popup-project.active #popup-footer {
     flex-wrap: wrap;
     display: flex;
