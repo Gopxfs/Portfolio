@@ -475,6 +475,18 @@ hr {
   margin-top: -10px;
 }
 
+#live-button {
+  background-image: url(images/live-icon.png);
+  background-position-x: 85px;
+  width: 115px;
+}
+
+#source-button {
+  background-image: url(images/github-icon.png);
+  background-position-x: 95px;
+  width: 124px;
+}
+
 #popup-project.active #live-button,
 #popup-project.active #source-button {
   margin: 12px;
@@ -485,18 +497,6 @@ hr {
   background-repeat: no-repeat;
   background-position-y: center;
   text-align: start;
- }
-
-#source-button {
-  background-image: url(images/github-icon.png);
-  background-position-x: 95px;
-  width: 124px;
-}
-
-#live-button {
-  background-image: url(images/live-icon.png);
-  background-position-x: 85px;
-  width: 115px;
 }
 
 #contact-work {
@@ -723,7 +723,7 @@ form {
     100% {
       transform: translateY(0);
     }
-  } 
+  }
 
   body {
     animation: 3.25s ease-out 0s 1 appearFromBottom;
@@ -932,7 +932,7 @@ form {
   #popup-project {
     display: none;
   }
-  
+
   #popup-project.active {
     display: flex;
     flex-direction: column;
@@ -948,7 +948,7 @@ form {
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     margin-top: -66px;
   }
-  
+
   #popup-project.active #popup-title {
     font-size: 20px;
     line-height: 28px;
@@ -957,7 +957,7 @@ form {
     margin-top: 1.5%;
     margin-bottom: 0;
   }
-  
+
   #popup-project.active #popup-image {
     margin: 1%;
     margin-top: 2%;
@@ -966,7 +966,7 @@ form {
     max-height: 50%;
     height: auto;
   }
-  
+
   #popup-project.active #popup-description {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -977,7 +977,7 @@ form {
     margin-right: 8%;
     height: auto;
   }
-  
+
   .contact-icons ul {
     margin: 25px;
   }
@@ -990,7 +990,7 @@ form {
     align-self: center;
     width: 80%;
   }
-  
+
   #popup-project.active ul li {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -1004,7 +1004,7 @@ form {
     padding-left: 3%;
     padding-right: 3%;
   }
-  
+
   #X-icon {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -1016,7 +1016,7 @@ form {
     background: none;
     border: none;
   }
-  
+
   #popup-project.active #popup-footer {
     flex-wrap: wrap;
     display: flex;
@@ -1030,9 +1030,9 @@ form {
     margin-top: 0;
     gap: 15px;
   }
-  
+
   #popup-project.active #live-button,
-  #popup-project.active #source-button{
+  #popup-project.active #source-button {
     margin: 12px;
     font-size: 12px;
     line-height: 24px;
