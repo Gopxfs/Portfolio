@@ -339,6 +339,7 @@ hr {
 .work-card ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
   justify-content: space-between;
@@ -353,8 +354,14 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  border-right: 1px solid #81818c;
+  padding-right: 16px;
   color: #fff;
   width: auto;
+}
+
+.project-language:last-child {
+  border-right: none;
 }
 
 .languages-separation {

@@ -60,13 +60,13 @@ const projectGrid = document.getElementById('project-grid');
 // Iterate throught all the projects
 for (let projectNumber = 0; projectNumber < projects.length; projectNumber += 1) {
   // Creating new HTML elements
-  let projectCard = document.createElement('section');
-  let projectImg = document.createElement('img');
-  let projectInfo = document.createElement('div');
-  let projectTitle = document.createElement('h3');
-  let projectDescription = document.createElement('p');
-  let projectTechnologies = document.createElement('ul');
-  let projectButton = document.createElement('button');
+  const projectCard = document.createElement('section');
+  const projectImg = document.createElement('img');
+  const projectInfo = document.createElement('div');
+  const projectTitle = document.createElement('h3');
+  const projectDescription = document.createElement('p');
+  const projectTechnologies = document.createElement('ul');
+  const projectButton = document.createElement('button');
   projectButton.type = 'button';
 
   // Giving classes to elements
@@ -77,7 +77,7 @@ for (let projectNumber = 0; projectNumber < projects.length; projectNumber += 1)
   projectDescription.classList.add('work-card-project-description');
   projectButton.classList.add('project-button', 'popup-project-window');
 
-  // Appending the elements
+  // Appending elements
   projectGrid.appendChild(projectCard);
   projectCard.appendChild(projectImg);
   projectCard.appendChild(projectInfo);
@@ -93,21 +93,21 @@ for (let projectNumber = 0; projectNumber < projects.length; projectNumber += 1)
   }
 
   // Adding technologies to the UL
-    for (let i = 0; i < projects[projectNumber].technologies.length; i += 1){
-       let listItem = document.createElement('li');
-       listItem.classList.add('project-language');
-       listItem.innerHTML = projects[projectNumber].technologies[i];
-       projectTechnologies.appendChild(listItem);
+  for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
+    const listItem = document.createElement('li');
+    listItem.classList.add('project-language');
+    listItem.innerHTML = projects[projectNumber].technologies[i];
+    projectTechnologies.appendChild(listItem);
   }
 
   // Filling the elements information
-    projectImg.src = projects[projectNumber].image;
-    projectImg.alt = 'Project '+[projectNumber]+'image';
-    projectTitle.innerHTML = projects[projectNumber].name;
-    projectDescription.innerHTML = projects[projectNumber].shortestDescription;
-    projectButton.innerHTML = 'See Project';
-    projectButton.setAttribute('id','project-button'+projectNumber);
-  }
+  projectImg.src = projects[projectNumber].image;
+  projectImg.alt = `Project ${projectNumber} image`;
+  projectTitle.innerHTML = projects[projectNumber].name;
+  projectDescription.innerHTML = projects[projectNumber].shortestDescription;
+  projectButton.innerHTML = 'See Project';
+  projectButton.setAttribute('id', `project-button${projectNumber}`);
+}
 
 // Function to change the popup project properties based on which button was clicked
 function selectProject(projectNumber) {
