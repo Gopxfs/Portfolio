@@ -451,16 +451,17 @@ hr {
 }
 
 #X-icon {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   position: absolute;
-  font-size: 22px;
   top: 2.5%;
   right: 6.5%;
-  color: #fff;
-  background: none;
   border: none;
-  height: 2px;
+  background: none;
+  height: 24px;
+  width: 24px;
+}
+
+#X-icon-image {
+  height: 12px;
 }
 
 #popup-project.active #popup-footer {
@@ -475,20 +476,20 @@ hr {
   margin-top: -10px;
 }
 
-#live-button {
+#live-link {
   background-image: url(images/live-icon.png);
   background-position-x: 85px;
-  width: 115px;
+  width: 80px;
 }
 
-#source-button {
+#source-link {
   background-image: url(images/github-icon.png);
   background-position-x: 95px;
-  width: 124px;
+  width: 90px;
 }
 
-#popup-project.active #live-button,
-#popup-project.active #source-button {
+#popup-project.active #live-link,
+#popup-project.active #source-link {
   margin: 12px;
   font-size: 12px;
   line-height: 24px;
@@ -496,7 +497,8 @@ hr {
   background-size: 18px, 20px;
   background-repeat: no-repeat;
   background-position-y: center;
-  text-align: start;
+  text-decoration: none;
+  text-align: start
 }
 
 #contact-work {
@@ -715,7 +717,7 @@ form {
 }
 
 @media screen and (min-width: 768px) {
-  @keyframes appearFromBottom {
+  /* @keyframes appearFromBottom {
     0% {
       transform: translateY(-3750px);
     }
@@ -723,7 +725,7 @@ form {
     100% {
       transform: translateY(0);
     }
-  }
+  } */
 
   body {
     animation: 3.25s ease-out 0s 1 appearFromBottom;
@@ -1008,15 +1010,14 @@ form {
   }
 
   #X-icon {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    position: absolute;
     font-size: 35px;
     top: 0.5%;
     right: 2%;
     color: #fff;
-    background: none;
-    border: none;
+  }
+
+  #X-icon-image {
+
   }
 
   #popup-project.active #popup-footer {
@@ -1033,13 +1034,23 @@ form {
     gap: 15px;
   }
 
-  #popup-project.active #live-button,
-  #popup-project.active #source-button {
+  #live-link {
+    width: 103px;
+  }
+
+  #source-link {
+    width: 113px;
+  }
+
+  #popup-project.active #live-link,
+  #popup-project.active #source-link {
     margin: 12px;
     font-size: 12px;
     line-height: 24px;
-    height: 48px;
+    height: 33px;
     padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 
   .contact-me-title {
