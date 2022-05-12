@@ -625,7 +625,8 @@ form textarea {
   font-size: 13px;
   line-height: 24px;
   color: red;
-  margin-top: -20px;
+  margin-top: -33px;
+  margin-bottom: 33px;
 }
 
 .error-message.active {
