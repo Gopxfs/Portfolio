@@ -156,16 +156,14 @@ for (let i = 0; i < toggleProjectWindow.length; i += 1) {
 }
 
   // event listener to submit event check if lower case
-  const formEmail = document.getElementById('contact-form');
-  formEmail.addEventListener('submit', checkEmail);
-
-  function checkEmail() {
-    email = document.getElementById('contact-me-email').innerHTML;
-    if (email === email.toLowerCase()) {
-
+  const formEmail = document.getElementById('contact-form').addEventListener('submit', (event)=>{
+    const email = document.getElementById('contact-me-email').value;
+    if(email != email.toLowerCase()){
+      event.preventDefault();
+      console.log("not equal")
+    }else {
+      console.log("equal")
     }
-      else {
-        
-    }
-    
-  }
+  });
+
+  
