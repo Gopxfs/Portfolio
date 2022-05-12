@@ -155,12 +155,29 @@ for (let i = 0; i < toggleProjectWindow.length; i += 1) {
   toggleProjectWindow[i].addEventListener('click', togglePopupWindow);
 }
 
+// Object to store the user data
+const userData = {
+  name: 'name',
+  email: 'email',
+  message: 'message',
+}
 // Check if the email is in lower case, if it isn't then dont submit the form
 document.getElementById('contact-form').addEventListener('submit', (event) => {
+  const name = document.getElementById('contact-me-name').value;
   const email = document.getElementById('contact-me-email').value;
-
+  const message = document.getElementById('contact-me-message').value;
   if (email !== email.toLowerCase()) {
     event.preventDefault();
     document.getElementById('email-error').classList.add('active');
+  } else { // If everything is ok, then store it on localStore
+    userData.name = name;
+    userData.email = email;
+    userData.message = message;
+    localStorage.setItem('userData', JSON.stringify(userData));
   }
 });
+
+// Check if there is something stored at localStore, if it is then put in the fields
+const savedUserData = localStorage.getItem('userData');
+JSON.parse(savedUserData);
+// if (savedUserData.name !== userData)
