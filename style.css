@@ -617,6 +617,21 @@ form textarea {
   padding: 12px 13px;
 }
 
+.error-message {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: red;
+  margin-top: -20px;
+}
+
+.error-message.active {
+  display: block;
+}
+
 #submit-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
