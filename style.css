@@ -29,12 +29,7 @@ body.active * {
   width: 100%;
   flex-wrap: wrap;
   overflow: hidden;
-  background: url(images/background/Ellipse\ 18.png) no-repeat,
-    url(images/background/Ellipse\ 19-1.png) no-repeat,
-    url(images/background/Ellipse\ 19.png) no-repeat,
-    url(images/background/Ellipse\ 20.png) no-repeat,
-    url(images/background/Ellipse\ 21.png) no-repeat,
-    url(images/background/Ellipse\ 22.png) no-repeat;
+  background: url(images/background/Ellipse\ 18.png) no-repeat, url(images/background/Ellipse\ 19-1.png) no-repeat, url(images/background/Ellipse\ 19.png) no-repeat, url(images/background/Ellipse\ 20.png) no-repeat, url(images/background/Ellipse\ 21.png) no-repeat, url(images/background/Ellipse\ 22.png) no-repeat;
   background-color: #191765;
   background-position-x: 0, 0, 100%, 100%, 0, 100%;
   background-position-y: 55px, 1601px, 590px, 2399px, 3244px, 4065px;
@@ -60,7 +55,7 @@ hr {
 }
 
 .header-logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -143,7 +138,7 @@ hr {
 }
 
 .headline-description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -155,7 +150,7 @@ hr {
 }
 
 .headline-heading-name {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 39.9px;
@@ -167,7 +162,7 @@ hr {
 }
 
 .headline-heading-occupation {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -195,7 +190,7 @@ hr {
 }
 
 .about-me-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -215,7 +210,7 @@ hr {
 }
 
 .about-me-list-item {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -262,7 +257,7 @@ hr {
 }
 
 .arrow-work-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -271,7 +266,7 @@ hr {
 }
 
 .my-recent-work {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -321,7 +316,7 @@ hr {
 
 .work-card-project-title {
   width: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -330,7 +325,7 @@ hr {
 }
 
 .work-card-project-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -354,7 +349,7 @@ hr {
 }
 
 .project-language {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -385,7 +380,7 @@ hr {
   background-color: #7d73fc;
   border: none;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -443,7 +438,7 @@ hr {
 }
 
 #popup-project.active #popup-description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -460,7 +455,7 @@ hr {
 }
 
 #popup-project.active ul li {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -558,7 +553,7 @@ hr {
 }
 
 .contact-me-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -569,7 +564,7 @@ hr {
 }
 
 .contact-me-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -586,7 +581,7 @@ form input {
   margin-bottom: 24px;
   padding: 12px 13px;
   height: 25px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -613,7 +608,7 @@ form textarea {
   margin-bottom: 52px;
   background: #fff;
   height: 148px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -624,7 +619,7 @@ form textarea {
 
 .error-message {
   display: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -639,7 +634,7 @@ form textarea {
 }
 
 #submit-button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -659,7 +654,7 @@ form {
 }
 
 .footer-email {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -682,8 +677,7 @@ form {
   position: fixed;
   height: 100vh;
   z-index: 1;
-  background: url(images/background/menu-ellipse1.png) no-repeat,
-    url(images/background/menu-ellipse2.png) no-repeat;
+  background: url(images/background/menu-ellipse1.png) no-repeat, url(images/background/menu-ellipse2.png) no-repeat;
   background-color: #191765;
   background-position-x: left, right;
   background-position-y: 20%, bottom;
@@ -740,7 +734,7 @@ form {
 }
 
 #header-flex.active .mobile-menu ul li a {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -773,12 +767,7 @@ form {
   }
 
   .page-flex {
-    background: url(images/background-desktop/circle\ 1\ header.png) no-repeat,
-      url(images/background-desktop/circle\ 2\ header.png) no-repeat,
-      url(images/background-desktop/Ellipse\ 19.png) no-repeat,
-      url(images/background-desktop/Ellipse\ 20.png) no-repeat,
-      url(images/background-desktop/Ellipse\ 21.png) no-repeat,
-      url(images/background-desktop/Ellipse\ 22.png) no-repeat;
+    background: url(images/background-desktop/circle\ 1\ header.png) no-repeat, url(images/background-desktop/circle\ 2\ header.png) no-repeat, url(images/background-desktop/Ellipse\ 19.png) no-repeat, url(images/background-desktop/Ellipse\ 20.png) no-repeat, url(images/background-desktop/Ellipse\ 21.png) no-repeat, url(images/background-desktop/Ellipse\ 22.png) no-repeat;
     background-color: #191765;
     background-position-x: 0, 100%, 0, 100%, 0, 100%;
     background-position-y: 237px, 546px, 1480px, 2257px, 2848px, 2934px;
@@ -830,7 +819,7 @@ form {
   }
 
   .desktop-menu ul li a {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1017,7 +1006,7 @@ form {
   }
 
   #popup-project.active #popup-description {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 30px;
     margin: 2%;
@@ -1041,7 +1030,7 @@ form {
   }
 
   #popup-project.active ul li {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
