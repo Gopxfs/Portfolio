@@ -155,15 +155,14 @@ for (let i = 0; i < toggleProjectWindow.length; i += 1) {
   toggleProjectWindow[i].addEventListener('click', togglePopupWindow);
 }
 
-  // event listener to submit event check if lower case
-  const formEmail = document.getElementById('contact-form').addEventListener('submit', (event)=>{
+// Check if the email is in lower case, if it isn't then dont submit the form
+  const form = document.getElementById('contact-form').addEventListener('submit', (event)=>{
     const email = document.getElementById('contact-me-email').value;
-    if(email != email.toLowerCase()){
+
+    if (email != email.toLowerCase()) {
       event.preventDefault();
-      console.log("not equal")
-    }else {
-      console.log("equal")
+      document.getElementById('email-error').classList.add('active');
     }
-  });
+});
 
   
