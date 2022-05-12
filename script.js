@@ -161,6 +161,7 @@ const userData = {
   email: 'email',
   message: 'message',
 }
+
 // Check if the email is in lower case, if it isn't then dont submit the form
 document.getElementById('contact-form').addEventListener('submit', (event) => {
   const name = document.getElementById('contact-me-name').value;
@@ -179,5 +180,6 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
 
 // Check if there is something stored at localStore, if it is then put in the fields
 const savedUserData = localStorage.getItem('userData');
-JSON.parse(savedUserData);
-// if (savedUserData.name !== userData)
+  document.getElementById('contact-me-name').value = JSON.parse(savedUserData).name;
+  document.getElementById('contact-me-email').value = JSON.parse(savedUserData).email;
+  document.getElementById('contact-me-message').value = JSON.parse(savedUserData).message;
