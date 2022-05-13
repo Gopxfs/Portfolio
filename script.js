@@ -165,7 +165,6 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
 });
 
 // Variables to store form elements
-const form = document.getElementById('contact-me-form');
 const userName = document.getElementById('contact-me-name');
 const email = document.getElementById('contact-me-email');
 const message = document.getElementById('contact-me-message');
@@ -180,7 +179,7 @@ function storeData() {
   userData.name = userName.value;
   userData.email = email.value;
   userData.message = message.value;
-  console.log(localStorage.setItem('userData', JSON.stringify(userData)));
+  localStorage.setItem('userData', JSON.stringify(userData));
 }
 // call storeData everytime a key is typed
 userName.addEventListener('keyup', storeData);
