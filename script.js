@@ -158,9 +158,36 @@ for (let i = 0; i < toggleProjectWindow.length; i += 1) {
 // Check if the email is in lower case, if it isn't then dont submit the form
 document.getElementById('contact-form').addEventListener('submit', (event) => {
   const email = document.getElementById('contact-me-email').value;
-
   if (email !== email.toLowerCase()) {
     event.preventDefault();
     document.getElementById('email-error').classList.add('active');
   }
 });
+
+// Variables to store form elements
+const userName = document.getElementById('contact-me-name');
+const email = document.getElementById('contact-me-email');
+const message = document.getElementById('contact-me-message');
+const userData = { // Object to store user data
+  name: 'name',
+  email: 'email',
+  message: 'message',
+};
+
+// Store data using localStorage
+function storeData() {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = message.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+// call storeData everytime a key is typed
+userName.addEventListener('keyup', storeData);
+email.addEventListener('keyup', storeData);
+message.addEventListener('keyup', storeData);
+
+// Check if there is something stored at localStore, if there is, put it in the fields
+const savedUserData = localStorage.getItem('userData');
+document.getElementById('contact-me-name').value = JSON.parse(savedUserData).name;
+document.getElementById('contact-me-email').value = JSON.parse(savedUserData).email;
+document.getElementById('contact-me-message').value = JSON.parse(savedUserData).message;
