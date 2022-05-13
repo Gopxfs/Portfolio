@@ -155,30 +155,39 @@ for (let i = 0; i < toggleProjectWindow.length; i += 1) {
   toggleProjectWindow[i].addEventListener('click', togglePopupWindow);
 }
 
-// Object to store the user data
-const userData = {
+// Check if the email is in lower case, if it isn't then dont submit the form
+document.getElementById('contact-form').addEventListener('submit', (event) => {
+  const email = document.getElementById('contact-me-email').value;
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    document.getElementById('email-error').classList.add('active');
+  }
+});
+
+// Variables to store form elements
+const form = document.getElementById('contact-me-form');
+const userName = document.getElementById('contact-me-name');
+const email = document.getElementById('contact-me-email');
+const message = document.getElementById('contact-me-message');
+const userData = { // Object to store user data
   name: 'name',
   email: 'email',
   message: 'message',
 };
 
-// Check if the email is in lower case, if it isn't then dont submit the form
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  const name = document.getElementById('contact-me-name').value;
-  const email = document.getElementById('contact-me-email').value;
-  const message = document.getElementById('contact-me-message').value;
-  if (email !== email.toLowerCase()) {
-    event.preventDefault();
-    document.getElementById('email-error').classList.add('active');
-  } else { // If everything is ok, then store it on localStore
-    userData.name = name;
-    userData.email = email;
-    userData.message = message;
-    localStorage.setItem('userData', JSON.stringify(userData));
-  }
-});
+// Store data using localStorage
+function storeData() {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = message.value;
+  console.log(localStorage.setItem('userData', JSON.stringify(userData)));
+}
+// call storeData everytime a key is typed
+userName.addEventListener('keyup', storeData);
+email.addEventListener('keyup', storeData);
+message.addEventListener('keyup', storeData);
 
-// Check if there is something stored at localStore, if it is then put in the fields
+// Check if there is something stored at localStore, if there is, put it in the fields
 const savedUserData = localStorage.getItem('userData');
 document.getElementById('contact-me-name').value = JSON.parse(savedUserData).name;
 document.getElementById('contact-me-email').value = JSON.parse(savedUserData).email;
