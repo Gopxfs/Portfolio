@@ -309,7 +309,7 @@ hr {
   max-width: 327px;
   width: 100%;
   min-height: 236px;
-  height: 100%;
+  height: auto;
   background-color: #f9f9f9;
   margin: 24px;
 }
